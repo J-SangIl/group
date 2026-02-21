@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    @apply bg-[#F5F5F0] text-[#1A1A1A];
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#5A5A40] text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-[#7B7B61] transition-all duration-200;
+  }
+  .btn-secondary {
+    @apply bg-[#E0E0D8] text-[#5A5A40] font-semibold py-3 px-6 rounded-full shadow-md hover:bg-[#D0D0C8] transition-all duration-200;
+  }
+  .btn-accent {
+    @apply bg-[#F27D26] text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-[#FF8C3F] transition-all duration-200;
+  }
+  .card-container {
+    @apply p-8 max-w-lg mx-auto bg-white rounded-3xl shadow-lg space-y-6;
+  }
+  .title-text {
+    @apply text-4xl font-bold text-center text-[#1A1A1A] mb-8;
+  }
+  .subtitle-text {
+    @apply text-lg text-center text-gray-600 mb-4;
+  }
+  .input-field {
+    @apply mt-1 block w-full pl-4 pr-12 py-3 text-base border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#5A5A40] focus:border-[#5A5A40] sm:text-lg rounded-xl;
+  }
+  .back-button {
+    @apply absolute top-6 left-6 bg-gray-200 text-gray-700 p-3 rounded-full shadow-md hover:bg-gray-300 transition-colors duration-200;
+  }
+  .student-card {
+    @apply p-4 rounded-xl shadow-sm border border-gray-200 text-center text-lg font-medium;
+  }
+  .student-card-absent {
+    @apply bg-red-100 text-red-700 line-through border-red-300;
+  }
+  .student-card-present {
+    @apply bg-green-100 text-green-700 hover:bg-green-200 border-green-300;
+  }
+}
